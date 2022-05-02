@@ -40,5 +40,3 @@ def dividelist(n):
     while(nstr[0] == '0'):
         nstr.remove(nstr[0])
     return nstr
-
-print( solution( '768 ' ) )

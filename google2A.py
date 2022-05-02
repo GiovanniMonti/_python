@@ -34,5 +34,3 @@ def solution(L):
             j = j + str(i)
         return int(j) 
     return 0
-
-print( solution( [4] ) )

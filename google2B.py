@@ -9,5 +9,3 @@ def solution( l , t ):
             if parsum == t:
                 return [k,i]
     return [-1, -1]
-
-print( solution( [4, 3, 10, 2, 8], 12 ) )
