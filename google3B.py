@@ -1,18 +1,9 @@
-def solution(M,F):
-    i = 0
-    M = int(M)
-    F = int(F)
-    m=1
-    f=1
-    while(m != M and f != M):
-        i = i + 1
-
-        if M-m < F-f:
-            m = m + f
-        elif M-m > F-f:
-            f = m + f
-        else:
-            return 'impossible'
-    return i
-
-solution('2', '1')
+def solution(x, y):
+    M, F = max(int(x), int(y)),min(int(x), int(y))
+    r = 0
+    while(F>0):
+        r +=M//F
+        M,F = F,M%F
+    if M != 1:
+        return 'impossible'
+    return str(r-1)
